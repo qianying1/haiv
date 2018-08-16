@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.qhb.haiv.persistence.FileMapper">
+    <resultMap id="fileSimpleResult" type="cn.qhb.haiv.model.File">
+        <id column="id" property="id" jdbcType="BIGINT" javaType="java.lang.Long"/>
+        <result column="save_path" property="savePath" jdbcType="VARCHAR"/>
+        <result column="file_name" property="fileName" jdbcType="VARCHAR"/>
+        <result column="file_real_name" property="fileRealName" jdbcType="VARCHAR"/>
+        <result column="size" property="size" jdbcType="FLOAT"/>
+        <result column="file_type" property="fileType" jdbcType="VARCHAR"/>
+        <result column="alter_time" property="alterTime" jdbcType="DATE"/>
+        <result column="insert_time" property="insertTime" jdbcType="DATE"/>
+    </resultMap>
+
+</mapper>

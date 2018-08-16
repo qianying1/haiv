@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.qhb.haiv.persistence.DeviceMapper">
+    <resultMap id="deviceSimpleResult" type="cn.qhb.haiv.model.Device">
+        <id column="id" property="id" jdbcType="BIGINT" javaType="java.lang.Long"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="asset_model" property="assetModel" jdbcType="VARCHAR"/>
+        <result column="cpu_model" property="cpuModel" jdbcType="VARCHAR"/>
+        <result column="manufacturer" property="manufacturer" jdbcType="VARCHAR"/>
+        <result column="series_num" property="seriesNum" jdbcType="VARCHAR"/>
+        <result column="opera_sys" property="operaSys" jdbcType="VARCHAR"/>
+        <result column="pro_ip" property="proIp" jdbcType="VARCHAR"/>
+        <result column="ofb_version" property="ofbVersion" jdbcType="VARCHAR"/>
+        <result column="ofb_ip" property="ofbIp" jdbcType="VARCHAR"/>
+        <result column="resp_man" property="respMan" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="VARCHAR"/>
+        <result column="usage_" property="usage" jdbcType="VARCHAR"/>
+        <result column="data_status" property="dataStatus" jdbcType="VARCHAR"/>
+        <result column="ofd" property="ofd" jdbcType="DATE"/>
+        <result column="dofd" property="dofd" jdbcType="INTEGER"/>
+        <result column="cabinet_id" property="cabinetId" jdbcType="BIGINT"/>
+        <result column="capacity" property="capacity" jdbcType="VARCHAR"/>
+        <result column="intern_memory" property="internMemory" jdbcType="VARCHAR"/>
+        <result column="alter_time" property="alterTime" jdbcType="DATE"/>
+        <result column="insert_time" property="insertTime" jdbcType="DATE"/>
+    </resultMap>
+
+</mapper>
